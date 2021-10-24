@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Lift.App</name>
+    </assembly>
+    <members>
+        <member name="M:DVieta.Controllers.BuildingController.GetBuildingConfig">
+            <summary>
+            Return buildyng configuration. LiftCount - number of lift in building. FlourCount - number of flours in building.
+            </summary>
+        </member>
+        <member name="M:DVieta.Controllers.BuildingController.SetBuildingConfig(System.Int32,System.Int32)">
+            <summary>
+            Sets building configuration
+            </summary>
+            <param name="liftCount">Number of lift in building</param>
+            <param name="flourCount">Number of flours in building</param>
+            <returns></returns>
+        </member>
+        <member name="M:DVieta.Controllers.LiftController.GetLifts">
+            <summary>
+            Building lifts
+            </summary>
+        </member>
+        <member name="M:DVieta.Controllers.LiftController.GetLift(System.Int32)">
+            <summary>
+            Current lift information
+            </summary>
+            <param name="liftId">Lift number</param>
+        </member>
+        <member name="M:DVieta.Controllers.LiftController.GetLiftLog(System.Int32)">
+            <summary>
+            Lift call, movement, doors log
+            </summary>
+            <param name="liftId">Lift number</param>
+            <returns></returns>
+        </member>
+        <member name="M:DVieta.Controllers.LiftController.GetLiftCalls(System.Int32)">
+            <summary>
+            Lift call log. Active = true, call is in queue. Active = false, call is processed
+            </summary>
+            <param name="liftId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVieta.Controllers.LiftController.MoveLift(System.Int32,System.Int32,Microsoft.Extensions.DependencyInjection.IServiceScopeFactory)">
+            <summary>
+            Order lift to move to flour
+            </summary>
+            <param name="liftId">Lift number</param>
+            <param name="toFlour">To witch four is lift called</param>
+            <param name="serviceScopeFactory"></param>
+        </member>
+    </members>
+</doc>
